@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<h1 th:align="center">测试</h1>
+<table border="1" align="center">
+    <tr>
+        <td>序号</td>
+        <td>分销商编号</td>
+        <td>合作商户编号</td>
+        <td>排序编号</td>
+        <td>获取图片链接</td>
+        <td>是否展示</td>
+        <td>合作商户链接</td>
+        <td>商户名称</td>
+    </tr>
+
+    <tr th:each="item : ${eCooperateMerList}">
+        <td th:text="${itemStat.count}"></td>
+        <td th:text="${item.agentMerSeq}"></td>
+        <td th:text="${item.cooperateMerSeq}"></td>
+        <td th:text="${item.eOrder}"></td>
+        <td th:text="${item.imageLink}"></td>
+        <td th:text="${item.isShow}"></td>
+        <td th:text="${item.merLink}"></td>
+        <td th:text="${item.merName}"></td>
+    </tr>
+
+</table>
+<br/>
+<br/>
+</body>
+
+</html>
