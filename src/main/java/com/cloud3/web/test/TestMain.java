@@ -1,5 +1,7 @@
 package com.cloud3.web.test;
 
+import java.util.Optional;
+
 /**
  * @author: HeYongLiu
  * @create: 07-17-2019
@@ -7,7 +9,7 @@ package com.cloud3.web.test;
  **/
 public class TestMain {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         //Lock lock = new ReentrantLock();
         //static int[] value = new int[]{1, 2};
